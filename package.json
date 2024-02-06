@@ -1,10 +1,18 @@
 {
   "name": "l0cked",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "workspaces": {
+    "nohoist": [
+      "**/web",
+      "**/web/**",
+      "**/docs",
+      "**/docs/**"
+    ],
+    "packages": [
+      "web",
+      "docs"
+    ]
+  },
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
