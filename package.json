@@ -1,23 +1,20 @@
 {
   "name": "l0cked",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "workspaces": [
-    "app",
-    "ui"
-  ],
+  "private": true,
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "deploy": "turbo run build --scope=app --include-dependencies"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "packageManager": "pnpm@8.14.1",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "pnpm": "^8.15.1",
-    "turbo": "^1.12.2"
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "prettier": "^3.1.1",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=18"
   }
 }
