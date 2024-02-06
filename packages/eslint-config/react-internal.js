@@ -51,6 +51,7 @@ module.exports = {
         "no-use-before-define": "off",
         "no-undef-init": "off",
         "no-undef": "off",
+        "no-redeclare": "off",
       },
     },
   ],

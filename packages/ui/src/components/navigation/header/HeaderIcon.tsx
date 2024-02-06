@@ -1,7 +1,7 @@
 "use client";
 
 import { MenuIcon, XIcon } from "lucide-react";
-import { Logo } from "../../Logo";
+import { BrandLogo } from "@ui/components/assets";
 import { useSidebarStore } from "../stores";
 
 const HeaderIcon = () => {
@@ -9,7 +9,7 @@ const HeaderIcon = () => {
 
   return (
     <>
-      <Logo className="hidden lg:flex" />
+      <BrandLogo className="hidden lg:flex" />
       {isOpen ? (
         <XIcon className="flex lg:hidden" onClick={() => setOpen(isOpen)} />
       ) : (

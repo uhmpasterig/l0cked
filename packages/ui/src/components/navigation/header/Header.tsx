@@ -7,7 +7,10 @@ import { HeaderIcon } from "./HeaderIcon";
 type SubHeaderProps = Omit<HeaderProps, "variant">;
 
 const sharedStyles = {
-  container: cn("flex items-center justify-between", `h-${HEADER_HEIGHT}`),
+  container: cn(
+    "flex items-center justify-between",
+    HEADER_HEIGHT ? `h-${HEADER_HEIGHT}` : "h-14"
+  ),
 };
 
 export const Header = ({ variant, navigationList }: HeaderProps) => {

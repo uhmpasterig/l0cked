@@ -1,6 +1,6 @@
 import { SidebarItem } from ".";
 import type { NavigationSectionProps } from "..";
-import { Separator } from "@/components/ui/separator";
+import { Separator } from "@ui/components/ui/separator";
 
 const SidebarSection = ({ section }: NavigationSectionProps) => {
   return (

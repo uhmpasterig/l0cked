@@ -1,6 +1,5 @@
-import Link from "next/link";
 import type { NavigationItemProps } from "..";
-import { Button } from "@/components/ui/button";
+import { Button } from "@ui/components/ui/button";
 
 const SidebarItem = ({ item }: NavigationItemProps) => {
   const { label, href, icon } = item;
@@ -8,10 +7,10 @@ const SidebarItem = ({ item }: NavigationItemProps) => {
 
   return (
     <Button variant="ghost" className="w-full flex h-10 mb-1" asChild>
-      <Link href={href}>
+      <a href={href}>
         {Icon && <Icon className="w-6 h-6 mr-6" />}
         <span className="flex-grow">{label}</span>
-      </Link>
+      </a>
     </Button>
   );
 };
