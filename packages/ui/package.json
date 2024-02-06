@@ -6,7 +6,7 @@
     "**/*.css"
   ],
   "exports": {
-    "./styles.css": "./dist/styles.css",
+    "./styles.css": "./src/styles.css",
     "./components/*": "./src/components/*.tsx",
     "./shadcn/*": "./src/components/ui/*.tsx",
     "./navigation/*": "./src/components/navigation/*.tsx"
