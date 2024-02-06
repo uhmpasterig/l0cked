@@ -7,26 +7,21 @@
     "dev": "turbo run dev",
     "build": "turbo run build"
   },
-  "turbo": {
-    "pipeline": {
-      "dev": {
-        "cache": false
-      },
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          ".next/**",
-          "dist/**"
-        ]
-      }
-    }
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "next": "14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ui": "workspace:*"
+  },
   "devDependencies": {
-    "turbo": "^1.12.2"
+    "@types/node": "^20",
+    "@types/react": "^18.2.55",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.1.0",
+    "turbo": "^1.12.2",
+    "typescript": "^5.3.3"
   }
 }
