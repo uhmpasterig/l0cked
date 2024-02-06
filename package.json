@@ -19,7 +19,8 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "build:web": "turbo build --scope=web --include-dependencies",
-    "build:docs": "turbo build --scope=docs --include-dependencies"
+    "build:docs": "turbo build --scope=docs --include-dependencies",
+    "build:css": "postcss src/styles.css -o dist/styles.css"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",

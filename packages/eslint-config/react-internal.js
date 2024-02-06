@@ -28,6 +28,9 @@ module.exports = {
       typescript: {
         project,
       },
+      node: {
+        extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx"],
+      },
     },
   },
   ignorePatterns: [
@@ -35,6 +38,8 @@ module.exports = {
     ".*.js",
     "node_modules/",
     "dist/",
+    "*.config.*",
+    "src/index.ts",
   ],
   overrides: [
     // Force ESLint to detect .tsx files

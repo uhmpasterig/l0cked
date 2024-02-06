@@ -18,6 +18,9 @@ module.exports = {
       typescript: {
         project,
       },
+      tailwind: {
+        project,
+      },
     },
   },
   ignorePatterns: [

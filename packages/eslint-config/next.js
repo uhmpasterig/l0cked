@@ -24,12 +24,18 @@ module.exports = {
       typescript: {
         project,
       },
+      node: {
+        extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx"],
+      },
     },
   },
   ignorePatterns: [
     // Ignore dotfiles
     ".*.js",
     "node_modules/",
+    "**/*.css",
+    "*.config.*",
+    "src/index.ts",
   ],
   overrides: [{ files: ["*.js?(x)", "*.ts?(x)"] }],
 };
