@@ -9,6 +9,7 @@ import { ThemeSwitcherWrapper } from "@/components/providers/theme";
 import { SunIcon } from "@radix-ui/react-icons";
 import { MoonIcon } from "lucide-react";
 import { LoginButton } from "@/components/Login";
+import { Button as LibButton } from "ui";
 
 const HeaderButtons = () => {
   return (
@@ -38,6 +39,9 @@ export default function Shop({ params }: { params: { id: number } }) {
         >
           L0cked
         </h1>
+        <LibButton>
+          Hello world! Button is working!
+        </LibButton>
         <h2 className="max-w-[750px] text-center text-lg text-muted-foreground sm:text-xl">
           The most secure authentication and authorization platform for developers.
         </h2>
