@@ -19,6 +19,7 @@
     "@locked/eslint-config": "workspace:*",
     "@locked/typescript-config": "workspace:*",
     "@locked/tailwind-config": "workspace:*",
+    "@types/locked": "workspace:*",
 
     "@types/eslint": "^8.56.1",
     "@types/node": "^20.10.6",
