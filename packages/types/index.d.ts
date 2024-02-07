@@ -1,3 +1,6 @@
-import "./globals/component";
+// domain specific types
+export * from "./domain/navigation";
+export * from "./domain/header";
 
-// creeate a component.d.ts with a global type HasChildren that can be used in any component
+// global types
+import "./globals/component";
