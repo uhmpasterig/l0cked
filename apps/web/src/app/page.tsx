@@ -69,6 +69,7 @@ export default function Page(): JSX.Element {
         <Grid.Item className="h-4 col-span-full shadow-sm" />
 
         <Changelog />
+        <Grid.Item className="h-4 col-span-full shadow-sm block lg:hidden" />
         <UpcomingEvents />
         <Grid.Item className="h-4 col-span-full shadow-sm" />
       </Grid.Box>
