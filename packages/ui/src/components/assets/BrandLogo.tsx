@@ -1,4 +1,5 @@
 import { cn } from "@ui/lib/utils";
+import { BRAND_IMAGES } from "@locked/assets";
 
 interface LogoProps {
   noLink?: boolean;
@@ -8,7 +9,7 @@ const _LogoWithText = () => {
   return (
     <>
       <img
-        src="s"
+        src={BRAND_IMAGES.LOCK}
         alt="Logo"
         className="cursor-pointer h-10 w-10 inline-block"
       />
