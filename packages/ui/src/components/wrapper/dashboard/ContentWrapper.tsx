@@ -5,18 +5,10 @@ import { useEffect } from "react";
 
 const DashboardContentWrapper = ({ children }: Component.HasChildren) => {
   const { isOpen, setOpen } = useSidebarStore();
-  /* useEffect(() => {
-    const content = document.getElementById("content");
-    content?.addEventListener("click", () => {
-      console.log("click");
-      setOpen(isOpen);
-    });
-  }, []); */
-
   return (
     <main
       id="content"
-      onClick={() => setOpen(isOpen)}
+      onClick={() => isOpen && setOpen(isOpen)}
       className={cn(
         "max-w-screen min-h-screen break-words overflow-hidden",
         "px-4 lg:pl-64",
