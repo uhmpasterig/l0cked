@@ -52,6 +52,7 @@ module.exports = {
         "no-undef-init": "off",
         "no-undef": "off",
         "no-redeclare": "off",
+        "no-undeclared-env-vars": "off",
       },
     },
   ],

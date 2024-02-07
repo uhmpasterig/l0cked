@@ -1,4 +1,5 @@
-import { Header } from "@locked/ui/components/navigation/header/Header";
+import { Header } from "@locked/ui";
+import { AArrowDown } from "@locked/icons/lucide";
 
 export default function Page(): JSX.Element {
   const navitems = [
@@ -23,7 +24,10 @@ export default function Page(): JSX.Element {
   return (
     <div className="flex">
       <Header variant="dashboard-header" navigationList={navitems} />
-      <main className="flex-1 mt-14">Content</main>
+      <main className="flex-1 mt-14">
+        <h1>Content</h1>
+        <AArrowDown />
+      </main>
     </div>
   );
 }
