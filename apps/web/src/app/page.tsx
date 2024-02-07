@@ -174,10 +174,10 @@ const Event = ({
 }) => {
   const Icon = icon;
   return (
-    <div className="flex flex-row items-center mb-2 border p-3 rounded-sm">
+    <div className="flex flex-row items-center mb-2 border rounded-sm p-3">
       <Icon className="w-4 h-4 mr-4 text-muted-foreground" />
       <div className="flex flex-col overflow-hidden">
-        <a className="text-ellipsis text-nowrap text-sm hover:underline cursor-pointer">
+        <a className="text-sm hover:underline cursor-pointer leading-none md:leading-normal">
           {title}
         </a>
         <p className="text-muted-foreground text-xs">

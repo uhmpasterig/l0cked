@@ -24,7 +24,7 @@ export const Header = ({ variant, navigationList }: HeaderProps) => {
 
 const HeaderWrapper = ({ children }: Component.HasChildren) => {
   return (
-    <header className="fixed top-0 w-full border-b-[1px] z-40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="fixed top-0 w-full border-b-[1px] z-40 bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/70">
       {children}
     </header>
   );
