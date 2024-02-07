@@ -48,7 +48,7 @@ const DashboardHeader = ({ navigationList }: SubHeaderProps) => {
   return (
     <>
       <HeaderWrapper>
-        <div className={cn(sharedStyles.container, "px-10")}>
+        <div className={cn(sharedStyles.container, "px-6 md:px-10")}>
           <HeaderIcon />
         </div>
       </HeaderWrapper>

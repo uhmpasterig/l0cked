@@ -1,7 +1,7 @@
 export declare global {
   namespace Component {
     type HasChildren = {
-      children: React.ReactNode;
+      children?: React.ReactNode;
     };
 
     type HasClassName = {

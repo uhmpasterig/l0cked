@@ -1,6 +1,6 @@
 import { Header as HeaderTypes, Navigation } from "locked";
-import { Header } from "../navigation";
-import { DashboardContentWrapper } from "./Dashboard.ContentWrapper";
+import { Header } from "../../navigation";
+import { DashboardContentWrapper } from "./ContentWrapper";
 
 type DashboardWrapperProps = {
   navigationList: Navigation.NavigationList;
