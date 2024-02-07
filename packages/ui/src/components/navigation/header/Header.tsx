@@ -1,16 +1,18 @@
 import { cn } from "@ui/lib/utils";
-import { HEADER_HEIGHT, type HeaderProps } from "..";
+import { Header as HeaderTypes, Navigation } from "locked";
 import { Sidebar } from "../sidebar";
 import { MenuIcon } from "lucide-react";
-import { HeaderIcon } from "./HeaderIcon";
+import { HeaderIcon } from "./Header.Icon";
+
+type HeaderProps = {
+  variant: HeaderTypes.HeaderVariant;
+  navigationList: Navigation.NavigationList;
+};
 
 type SubHeaderProps = Omit<HeaderProps, "variant">;
 
 const sharedStyles = {
-  container: cn(
-    "flex items-center justify-between",
-    HEADER_HEIGHT ? `h-${HEADER_HEIGHT}` : "h-14"
-  ),
+  container: cn("flex items-center justify-between h-14"),
 };
 
 export const Header = ({ variant, navigationList }: HeaderProps) => {
@@ -44,13 +46,13 @@ const PageHeader = ({ navigationList }: SubHeaderProps) => {
 
 const DashboardHeader = ({ navigationList }: SubHeaderProps) => {
   return (
-    <div className="overflow-hidden h-screen">
+    <>
       <HeaderWrapper>
         <div className={cn(sharedStyles.container, "px-10")}>
           <HeaderIcon />
         </div>
       </HeaderWrapper>
       <Sidebar navigationList={navigationList} />
-    </div>
+    </>
   );
 };

@@ -201,6 +201,9 @@ importers:
 
   packages/types:
     dependencies:
+      '@locked/icons':
+        specifier: workspace:*
+        version: link:../icons
       typescript:
         specifier: latest
         version: 5.3.3

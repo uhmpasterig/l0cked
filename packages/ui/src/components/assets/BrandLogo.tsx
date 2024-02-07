@@ -1,9 +1,9 @@
 import { cn } from "@ui/lib/utils";
 import { BRAND_IMAGES } from "@locked/assets";
 
-interface LogoProps {
+type LogoProps = {
   noLink?: boolean;
-}
+};
 
 const _LogoWithText = () => {
   return (

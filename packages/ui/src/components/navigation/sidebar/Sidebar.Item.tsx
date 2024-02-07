@@ -1,5 +1,9 @@
-import type { NavigationItemProps } from "..";
+import { Navigation } from "locked";
 import { Button } from "@ui/components/ui/button";
+
+type NavigationItemProps = {
+  item: Navigation.NavigationItem;
+};
 
 const SidebarItem = ({ item }: NavigationItemProps) => {
   const { label, href, icon } = item;

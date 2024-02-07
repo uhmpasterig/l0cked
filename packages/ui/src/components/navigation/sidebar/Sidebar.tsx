@@ -1,6 +1,11 @@
 import { cn } from "@ui/lib/utils";
-import { NavigationProps, HEADER_HEIGHT } from "..";
-import { MobileSidebarWrapper, SidebarSection } from ".";
+import { Navigation } from "locked";
+import { MobileSidebarWrapper } from "./Mobile.SidebarWrapper";
+import { SidebarSection } from "./Sidebar.Section";
+
+type NavigationProps = {
+  navigationList: Navigation.NavigationList;
+};
 
 const Sidebar = ({ navigationList }: NavigationProps) => {
   return (
@@ -29,8 +34,7 @@ const DesktopSidebar = ({ navigationList }: NavigationProps) => {
   return (
     <nav
       className={cn(
-        "hidden lg:flex w-60 border-r h-screen flex-col gap-3 py-5 items-center",
-        `mt-${HEADER_HEIGHT}`
+        "fixed hidden lg:flex w-60 border-r h-screen flex-col gap-3 pb-5 pt-16 items-center"
       )}
     >
       {navigationList.map((item, index) => (

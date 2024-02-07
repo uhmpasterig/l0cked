@@ -1,6 +1,10 @@
-import { SidebarItem } from ".";
-import type { NavigationSectionProps } from "..";
+import { SidebarItem } from "./Sidebar.Item";
+import { Navigation } from "locked";
 import { Separator } from "@ui/components/ui/separator";
+
+type NavigationSectionProps = {
+  section: Navigation.NavigationSection;
+};
 
 const SidebarSection = ({ section }: NavigationSectionProps) => {
   return (

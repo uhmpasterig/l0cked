@@ -1,9 +1,7 @@
 "use client";
-
 import { MenuIcon, XIcon } from "lucide-react";
 import { BrandLogo } from "@ui/components/assets";
 import { useSidebarStore } from "../stores";
-
 const HeaderIcon = () => {
   const { isOpen, setOpen } = useSidebarStore();
 
