@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "dev": "dotenv -- turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "build:web": "turbo build --scope=web --include-dependencies",
@@ -23,8 +23,9 @@
     "build:css": "postcss src/styles.css -o dist/styles.css"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@locked/eslint-config": "workspace:*",
+    "@locked/typescript-config": "workspace:*",
+    "dotenv-cli": "^7.3.0",
     "prettier": "^3.1.1",
     "turbo": "latest"
   },

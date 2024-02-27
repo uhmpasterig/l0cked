@@ -19,6 +19,9 @@ const config: Config = {
       },
     },
     extend: {
+      gridTemplateRows: {
+        100: "repeat(100, minmax(0, 1fr))",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

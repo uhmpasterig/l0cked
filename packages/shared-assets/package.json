@@ -1,0 +1,8 @@
+{
+  "name": "@locked/assets",
+  "version": "1.0.0",
+  "index": "index.js",
+  "dependencies": {
+    "typescript": "latest"
+  }
+}

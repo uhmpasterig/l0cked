@@ -9,22 +9,25 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
+    "@locked/ui": "workspace:*",
+    "@locked/icons": "workspace:*",
     "next": "^14.0.4",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@locked/eslint-config": "workspace:*",
+    "@locked/tailwind-config": "workspace:*",
+    "@locked/typescript-config": "workspace:*",
+    "@types/locked": "workspace:*",
+    
     "@next/eslint-plugin-next": "^14.0.4",
-    "@repo/eslint-config": "workspace:*",
-    "@repo/tailwind-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
     "@types/eslint": "^8.56.1",
+    "autoprefixer": "^10.4.17",
     "@types/node": "^20.10.6",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
-    "autoprefixer": "^10.4.17",
     "eslint": "^8.56.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
