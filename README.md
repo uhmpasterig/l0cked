@@ -1,6 +1,6 @@
-# Turborepo starter
+# Unfortunately, another project has come to an end prematurely.
 
-This is an official starter Turborepo.
+I've lost touch with the other individuals I intended to collaborate with, relegating this endeavor to the graveyard of unfinished projects. Nonetheless, it's a project I hold dear and plan to revisit in the future.
 
 ## Using this example
 
